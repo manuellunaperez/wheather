@@ -14,4 +14,4 @@ respuesta = requests.get('http://api.openweathermap.org/data/2.5/weather',params
 dicc = json.loads(respuesta.text)
 temperatura = dicc['main']['temp']
 
-print 'La temperatura actual de %s es %s grados centígrados' % (provincias[peticion],temperatura-273)
+print 'La temperatura actual de %s es %s grados centígrados' % (provincias[peticion],temperatura-272.15)
